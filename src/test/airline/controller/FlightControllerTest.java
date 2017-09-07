@@ -18,7 +18,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 @RunWith(SpringRunner.class)
@@ -31,7 +30,7 @@ public class FlightControllerTest {
     @MockBean
     private FlightSearchService flightSearchService;
 
-    Flight MockFlight = new Flight("source", "destination", "FR123");
+    Flight MockFlight = new Flight("source", "destination", "FR123", 2);
     List<Flight> mockList = new ArrayList<>(Arrays.asList(MockFlight));
 
     @Test

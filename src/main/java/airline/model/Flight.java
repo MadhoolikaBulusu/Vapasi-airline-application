@@ -1,15 +1,16 @@
 package airline.model;
 
-
 public class Flight {
-    String fromLocation;
-    String toLocation;
-    String flightNumber;
+    private String fromLocation;
+    private String toLocation;
+    private String flightNumber;
+    private int capacity;
 
-    public Flight(String fromLocation, String toLocation, String flightNumber) {
+    public Flight(String fromLocation, String toLocation, String flightNumber, int capacity) {
         this.fromLocation = fromLocation;
         this.toLocation = toLocation;
         this.flightNumber = flightNumber;
+        this.capacity = capacity;
     }
 
     public String getFromLocation() {
@@ -38,5 +39,9 @@ public class Flight {
 
     public boolean isFlightBetweenCities(String source, String Destination) {
         return (fromLocation.equals(source) && toLocation.equals(Destination));
+    }
+
+    public boolean isSeatAvailable(int noOfSeats) {
+        return capacity >= noOfSeats;
     }
 }

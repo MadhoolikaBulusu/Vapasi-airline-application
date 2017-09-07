@@ -6,7 +6,16 @@
 </head>
 <body>
 <form action="#" th:action="@{/search}" th:object="${flightSearch}" method="POST">
-    <p>To: <input type="text" th:field="*{toLocation}"/> From: <input type="text" th:field="*{fromLocation}"/></p>
+    <p>To: <input type="text" th:field="*{toLocation}"/> From: <input type="text" th:field="*{fromLocation}"/>
+        <select th:field="*{numberOfPassengers}">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select></p>
     <input type="submit" value="Submit"/>
 </form>
 <br/>

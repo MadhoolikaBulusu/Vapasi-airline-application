@@ -1,21 +1,17 @@
 package airline.model;
 
-
-import java.util.List;
-
 public class FlightSearch {
-    String toLocation;
-    String fromLocation;
-    List<Flight> flightList;
+    private String toLocation;
+    private String fromLocation;
+    private int numberOfPassengers;
 
-    public List<Flight> getFlightList() {
-        return flightList;
+    public int getNumberOfPassengers() {
+        return numberOfPassengers;
     }
 
-    public void setFlightList(List<Flight> flightList) {
-        this.flightList = flightList;
+    public void setNumberOfPassengers(int numberOfPassengers) {
+        this.numberOfPassengers = numberOfPassengers;
     }
-
 
     public String getToLocation() {
         return toLocation;

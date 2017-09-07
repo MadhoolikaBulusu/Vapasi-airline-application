@@ -28,7 +28,7 @@ public class FlightSearchServiceTest {
     @Autowired
     private FlightSearchService flightSearchService;
 
-    Flight mockFlight = new Flight("src", "dest", "123");
+    Flight mockFlight = new Flight("src", "dest", "123", 2);
     private List<Flight> listOfMockFlights = new ArrayList<>(Arrays.asList(mockFlight));
 
     @Test
