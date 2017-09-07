@@ -1,8 +1,6 @@
 package airline.controller;
 
 
-import airline.model.Flight;
-import airline.service.FlightSearchService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -14,6 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
+import airline.model.Flight;
+import airline.service.FlightSearchService;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
